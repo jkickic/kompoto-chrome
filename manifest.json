@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "kompoto chrome plugin",
+  "description": "",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["http://allegro.pl/*","http://olx.pl/*","http://otomoto.pl/*"],
+      "js": ["kompoto.js"]
+    }
+  ],
+  "permissions": [
+    "declarativeContent",
+    "activeTab",
+    "storage",
+    "https://ajax.googleapis.com/",
+    "http://kompoto-prod.herokuapp.com/"
+  ]
+}
